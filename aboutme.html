@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>About Me | Nabilah's Personal Space</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+     <!-- BACKGROUND MUSIC -->
+
+    
+<audio id="bgMusic" autoplay loop style="display:none;">
+
+    <source src="music/backgroundmusic.mp3"
+    type="audio/mp3">
+
+    </audio>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <img src="images/banner.png" alt="Banner" class="banner">
+
+    </header>
+
+
+
+      
+<!-- NAVIGATION -->
+
+<nav>
+
+    <!-- LOGO -->
+
+    <a href="index.html">
+
+        <img src="images/logo.png"
+        alt="Logo"
+        class="logo">
+
+    </a>
+
+
+
+    <!-- NAVIGATION MENU -->
+
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="moments.html">MOMENTS</a>
+    <a href="hobby.html">HOBBY</a>
+
+</nav>
+
+
+
+
+
+    <!-- ABOUT ME SECTION -->
+
+    <section class="about-section">
+
+        <h1>About Me</h1>
+
+        <div class="about-container">
+
+            <img src="images/nab.jpeg" alt="Profile Picture" class="about-image">
+
+            <div class="about-text">
+
+                <p>
+                    My name is Wan Nur Nabilah Insyirah
+                    Binti Wan Rozaini. I'm from Kuala Lumpur and 
+		    I am currently pursuing Diploma in
+                    Library Informatics at UiTM Kedah.
+		    I am the eldest daughter in a family of five siblings.
+   		    Being the oldest child has taught me to become more
+                    responsible, independent, and caring towards my family.
+
+                </p>
+
+                <p>
+                    I am someone who enjoys learning new things,
+                    exploring creative ideas, and spending time with
+                    people who inspire me.
+                </p>
+
+                <p>
+                    During my free time, I enjoy listening to music,
+                    watching movies, reading my novels, and capturing
+                    beautiful moments through photography.
+                </p>
+
+                <p>
+                    I believe that every experience in life teaches us
+                    something valuable and helps us grow into a better person.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PERSONAL DETAILS SECTION -->
+
+    <section class="details-section">
+
+        <h2>Personal Details</h2>
+
+        <table>
+
+            <tr>
+                <td>Full Name</td>
+                <td>Wan Nur Nabilah Insyirah Binti Wan Rozaini</td>
+            </tr>
+
+            <tr>
+                <td>Nickname</td>
+                <td>Nab</td>
+            </tr>
+
+            <tr>
+                <td>Age</td>
+                <td>20 Years Old</td>
+            </tr>
+
+            <tr>
+                <td>Favorite Food</td>
+                <td>Pasta and Tom Yum</td>
+            </tr>
+	    
+             <tr>
+                <td>Favorite Drinks</td>
+                <td>Buttercream Latte</td>
+            </tr>
+
+            <tr>
+                <td>Favorite Color</td>
+                <td>Brown</td>
+            </tr>
+
+            <tr>
+                <td>Favorite Movie</td>
+                <td>
+    		<a href="https://www.youtube.com/watch?v=cyVk51ksx4o" target="_blank" class="fav-link">
+       			 Midnight Runners 🎬
+  	 		 </a>
+		</td>
+            </tr>
+
+            <tr>
+                <td>Favorite Song</td>
+                <td>
+    		  <a href="https://www.youtube.com/watch?v=BaWaJjKJJdk&list=RDBaWaJjKJJdk&start_radio=1" target="_blank" class="fav-link">
+                  Cancer - My Chemical Romance 🎵
+                  </a>
+		</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+<!-- MY VIDEO SECTION -->
+
+<section class="about-video-section">
+
+    <h1>Little Moments of Me ✨</h1>
+
+    <hr class="line">
+
+    <p class="about-video-text">
+
+        A short glimpse into the little moments
+        that make my life meaningful and memorable.
+
+    </p>
+
+    <video autoplay muted loop controls>
+
+        <source src="video/aboutme.mp4" type="video/mp4">
+
+    </video>
+
+</section>
+
+
+
+    <!-- QUOTE SECTION -->
+
+    <section class="quote-section">
+
+        <h2>
+            "Be yourself and never stop growing."
+        </h2>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Nabilah's Personal Space |
+            Recommended Browser: Microsoft Edge |
+            Last Updated: May 2026
+        </p>
+
+    </footer>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    let bgMusic = document.getElementById("bgMusic");
+
+
+
+    let videos = document.querySelectorAll("video");
+
+
+
+    videos.forEach(function(video){
+
+        /* PAUSE MUSIC WHEN VIDEO PLAYS */
+
+        video.addEventListener("play", function(){
+
+            bgMusic.pause();
+
+        });
+
+
+
+        /* RESUME MUSIC WHEN VIDEO PAUSES */
+
+        video.addEventListener("pause", function(){
+
+            bgMusic.play();
+
+        });
+
+
+
+        /* RESUME MUSIC WHEN VIDEO ENDS */
+
+        video.addEventListener("ended", function(){
+
+            bgMusic.play();
+
+        });
+
+    });
+
+});
+
+</script>
+
+
+
+</body>
+
+</html>

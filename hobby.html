@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Hobby | Nabilah's Personal Space</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+     <!-- BACKGROUND MUSIC -->
+
+   <audio autoplay loop style="display:none;">
+
+        <source src="music/backgroundmusic.mp3" type="audio/mp3">
+
+    </audio>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <img src="images/banner.png" alt="Banner" class="banner">
+
+    </header>
+
+
+
+     
+<!-- NAVIGATION -->
+
+<nav>
+
+    <!-- LOGO -->
+
+    <a href="index.html">
+
+        <img src="images/logo.png"
+        alt="Logo"
+        class="logo">
+
+    </a>
+
+
+
+    <!-- NAVIGATION MENU -->
+
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="moments.html">MOMENTS</a>
+    <a href="hobby.html">HOBBY</a>
+
+</nav>
+
+
+
+
+
+    <!-- HOBBY INTRO SECTION -->
+
+    <section class="hobby-section">
+
+        <h1>My Hobbies & Interests</h1>
+
+        <hr class="line">
+
+        <p class="hobby-text">
+
+            Hobbies are activities that help me relax,
+            express creativity, and enjoy meaningful moments.
+            These hobbies make my life more enjoyable and memorable.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- HOBBY CARDS -->
+
+    <section class="hobby-gallery">
+
+
+
+        <!-- HOBBY 1 -->
+
+        <div class="hobby-card" onclick="openHobby1()">
+
+            <img src="images/music.jpeg" alt="Music">
+
+            <div class="overlay">
+
+                <h2>Listening to Music 🎵</h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOBBY 2 -->
+
+        <div class="hobby-card" onclick="openHobby2()">
+
+            <img src="images/view.jpeg" alt="Capture View">
+
+            <div class="overlay">
+
+                <h2>Capturing Beautiful Views 📸</h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOBBY 3 -->
+
+        <div class="hobby-card" onclick="openHobby3()">
+
+            <img src="images/movie.jpeg" alt="Movies">
+
+            <div class="overlay">
+
+                <h2>Watching Movies 🎬</h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOBBY 4 -->
+
+        <div class="hobby-card" onclick="openHobby4()">
+
+            <img src="images/cafe.jpeg" alt="Cafe">
+
+            <div class="overlay">
+
+                <h2>Cafe Hunting ☕</h2>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- HOBBY 5 -->
+
+        <div class="hobby-card" onclick="openHobby5()">
+
+            <img src="images/book.jpeg" alt="Reading Books">
+
+            <div class="overlay">
+
+                <h2>Reading Books 📚</h2>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+<!-- POPUP HOBBY 1 -->
+
+<div id="hobby1-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeHobby1()">&times;</span>
+
+        <div class="popup-slideshow">
+
+
+
+            <div class="popup-slide hobby1-slide fade">
+
+                <img src="images/music1.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby1-slide fade">
+
+                <img src="images/music2.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby1-slide fade">
+
+                <img src="images/music3.jpeg">
+
+            </div>
+
+
+
+            <a class="popup-prev" onclick="plusSlides(-1, 'hobby1-slide')">❮</a>
+
+            <a class="popup-next" onclick="plusSlides(1, 'hobby1-slide')">❯</a>
+
+        </div>
+
+        <h2>Listening to Music 🎵</h2>
+
+        <p>
+            Music helps me relax and enjoy my free time.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- POPUP HOBBY 2 -->
+
+<div id="hobby2-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeHobby2()">&times;</span>
+
+        <div class="popup-slideshow">
+
+
+
+            <div class="popup-slide hobby2-slide fade">
+
+                <img src="images/view1.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby2-slide fade">
+
+                <img src="images/view2.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby2-slide fade">
+
+                <img src="images/view3.jpeg">
+
+            </div>
+
+
+
+            <a class="popup-prev" onclick="plusSlides(-1, 'hobby2-slide')">❮</a>
+
+            <a class="popup-next" onclick="plusSlides(1, 'hobby2-slide')">❯</a>
+
+        </div>
+
+        <h2>Capturing Beautiful Views 📸</h2>
+
+        <p>
+            Photography helps me preserve meaningful memories.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- POPUP HOBBY 3 -->
+
+<div id="hobby3-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeHobby3()">&times;</span>
+
+        <div class="popup-slideshow">
+
+
+
+            <div class="popup-slide hobby3-slide fade">
+
+                <img src="images/movie1.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby3-slide fade">
+
+                <img src="images/movie2.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby3-slide fade">
+
+                <img src="images/movie3.jpeg">
+
+            </div>
+
+
+
+            <a class="popup-prev" onclick="plusSlides(-1, 'hobby3-slide')">❮</a>
+
+            <a class="popup-next" onclick="plusSlides(1, 'hobby3-slide')">❯</a>
+
+        </div>
+
+        <h2>Watching Movies 🎬</h2>
+
+        <p>
+            Watching movies helps me release stress and enjoy entertainment.
+        </p>
+
+    </div>
+
+</div>
+
+
+<!-- POPUP HOBBY 4 -->
+
+<div id="hobby4-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeHobby4()">&times;</span>
+
+        <div class="popup-slideshow">
+
+
+
+            <div class="popup-slide hobby4-slide fade">
+
+                <img src="images/cafe1.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby4-slide fade">
+
+                <img src="images/cafe2.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby4-slide fade">
+
+                <img src="images/cafe3.jpeg">
+
+            </div>
+
+
+
+            <a class="popup-prev" onclick="plusSlides(-1, 'hobby4-slide')">❮</a>
+
+            <a class="popup-next" onclick="plusSlides(1, 'hobby4-slide')">❯</a>
+
+        </div>
+
+        <h2>Cafe Hunting ☕</h2>
+
+        <p>
+            I enjoy visiting aesthetic cafes with friends.
+        </p>
+
+    </div>
+
+</div>
+
+
+
+<!-- POPUP HOBBY 5 -->
+
+<div id="hobby5-popup" class="popup">
+
+    <div class="popup-content">
+
+        <span class="close" onclick="closeHobby5()">&times;</span>
+
+        <div class="popup-slideshow">
+
+
+
+            <div class="popup-slide hobby5-slide fade">
+
+                <img src="images/book1.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby5-slide fade">
+
+                <img src="images/book2.jpeg">
+
+            </div>
+
+            <div class="popup-slide hobby5-slide fade">
+
+                <img src="images/book3.jpeg">
+
+            </div>
+
+
+
+            <a class="popup-prev" onclick="plusSlides(-1, 'hobby5-slide')">❮</a>
+
+            <a class="popup-next" onclick="plusSlides(1, 'hobby5-slide')">❯</a>
+
+        </div>
+
+        <h2>Reading Books 📚</h2>
+
+        <p>
+            Reading books helps me improve my knowledge and imagination.
+        </p>
+
+    </div>
+
+</div>
+
+
+    <!-- QUOTE SECTION -->
+
+    <section class="quote-section">
+
+        <h2>
+            "Hobbies add color and happiness to life."
+        </h2>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Nabilah's Personal Space |
+            Recommended Browser: Microsoft Edge |
+            Last Updated: May 2026
+        </p>
+
+    </footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+    let slideIndexes = {};
+
+
+
+    function showSlides(className, n){
+
+        let slides = document.getElementsByClassName(className);
+
+
+
+        if (!slideIndexes[className]) {
+
+            slideIndexes[className] = 1;
+
+        }
+
+
+
+        if (n > slides.length){
+
+            slideIndexes[className] = 1;
+
+        }
+
+
+
+        if (n < 1){
+
+            slideIndexes[className] = slides.length;
+
+        }
+
+
+
+        for(let i = 0; i < slides.length; i++){
+
+            slides[i].style.display = "none";
+
+        }
+
+
+
+        slides[slideIndexes[className] - 1].style.display = "block";
+
+    }
+
+
+
+    function plusSlides(n, className){
+
+        slideIndexes[className] += n;
+
+        showSlides(className, slideIndexes[className]);
+
+    }
+
+
+
+    /* HOBBY 1 */
+
+    function openHobby1(){
+
+        document.getElementById("hobby1-popup").style.display = "flex";
+
+        slideIndexes["hobby1-slide"] = 1;
+
+        showSlides("hobby1-slide", 1);
+
+    }
+
+
+
+    function closeHobby1(){
+
+        document.getElementById("hobby1-popup").style.display = "none";
+
+    }
+
+
+
+    /* HOBBY 2 */
+
+    function openHobby2(){
+
+        document.getElementById("hobby2-popup").style.display = "flex";
+
+        slideIndexes["hobby2-slide"] = 1;
+
+        showSlides("hobby2-slide", 1);
+
+    }
+
+
+
+    function closeHobby2(){
+
+        document.getElementById("hobby2-popup").style.display = "none";
+
+    }
+
+
+
+    /* HOBBY 3 */
+
+    function openHobby3(){
+
+        document.getElementById("hobby3-popup").style.display = "flex";
+
+        slideIndexes["hobby3-slide"] = 1;
+
+        showSlides("hobby3-slide", 1);
+
+    }
+
+
+
+    function closeHobby3(){
+
+        document.getElementById("hobby3-popup").style.display = "none";
+
+    }
+
+
+
+    /* HOBBY 4 */
+
+    function openHobby4(){
+
+        document.getElementById("hobby4-popup").style.display = "flex";
+
+        slideIndexes["hobby4-slide"] = 1;
+
+        showSlides("hobby4-slide", 1);
+
+    }
+
+
+
+    function closeHobby4(){
+
+        document.getElementById("hobby4-popup").style.display = "none";
+
+    }
+
+
+
+    /* HOBBY 5 */
+
+    function openHobby5(){
+
+        document.getElementById("hobby5-popup").style.display = "flex";
+
+        slideIndexes["hobby5-slide"] = 1;
+
+        showSlides("hobby5-slide", 1);
+
+    }
+
+
+
+    function closeHobby5(){
+
+        document.getElementById("hobby5-popup").style.display = "none";
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

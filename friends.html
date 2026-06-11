@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Friends | Nabilah's Personal Space</title>
+
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+	 <!-- BACKGROUND MUSIC -->
+
+    	<audio autoplay loop style="display:none;">
+
+        <source src="music/backgroundmusic.mp3" type="audio/mp3">
+
+   	</audio>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <img src="images/banner.png" alt="Banner" class="banner">
+
+    </header>
+
+
+
+       
+<!-- NAVIGATION -->
+
+<nav>
+
+    <!-- LOGO -->
+
+    <a href="index.html">
+
+        <img src="images/logo.png"
+        alt="Logo"
+        class="logo">
+
+    </a>
+
+
+
+    <!-- NAVIGATION MENU -->
+
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="moments.html">MOMENTS</a>
+    <a href="hobby.html">HOBBY</a>
+
+</nav>
+
+
+
+
+    <!-- FRIENDS INTRO SECTION -->
+
+    <section class="friends-section">
+
+        <h1>My Amazing Friends</h1>
+
+        <hr class="line">
+
+        <p class="friends-text">
+
+            Friends are the people who make life more meaningful,
+            colorful, and unforgettable. I am grateful to have
+            supportive friends who always stay beside me through
+            every happy and difficult moment.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- SECONDARY SCHOOL FRIENDS -->
+
+    <section class="friends-category">
+
+        <h2>School Friends</h2>
+
+        <p class="category-text">
+            Friends who colored my teenage school life with beautiful memories.
+        </p>
+
+
+
+        <div class="friends-gallery">
+
+            <div class="polaroid" onclick="openFriend1()">
+
+                <img src="images/safee.jpeg" alt="Friend 1">
+
+                <h3>Safee Nabilah</h3>
+
+		  <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+            
+	    </div>
+
+
+
+            <div class="polaroid" onclick="openFriend2()">
+
+                <img src="images/dhia.jpeg" alt="Friend 2">
+
+                <h3>Dhia Ainul</h3>
+
+		 <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+            </div>
+
+
+
+            <div class="polaroid" onclick="openFriend3()">
+
+                <img src="images/aina.jpeg" alt="Friend 3">
+
+                <h3>Aina Nafisa</h3>
+
+		 <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+
+            </div>
+
+
+
+            <div class="polaroid" onclick="openFriend4()">
+
+                <img src="images/auni.jpeg" alt="Friend 4">
+
+                <h3>Auni Farhanah</h3>
+
+             <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- DIPLOMA FRIENDS -->
+
+    <section class="friends-category">
+
+        <h2>Diploma Friends</h2>
+
+        <p class="category-text">
+            Friends who became my second family during diploma life.
+        </p>
+
+
+
+        <div class="friends-gallery">
+
+            <div class="polaroid" onclick="openFriend5()">
+
+                <img src="images/alya.jpeg" alt="Friend 5">
+
+                <h3>Nuralya Irdina</h3>
+
+ 		  <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+
+            </div>
+
+
+
+            <div class="polaroid" onclick="openFriend6()">
+
+                <img src="images/ameera.jpeg" alt="Friend 6">
+
+                <h3>Ameera Najwa</h3>
+
+   		 <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+            </div>
+
+
+
+            <div class="polaroid" onclick="openFriend7()">
+
+                <img src="images/najwa.jpeg" alt="Friend 7">
+
+                <h3>Sabihatun Najwa</h3>
+
+  		  <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+            </div>
+
+
+
+            <div class="polaroid" onclick="openFriend8()">
+
+                <img src="images/nurin.jpeg" alt="Friend 8">
+
+                <h3>Nurin Nisa</h3>
+
+		 <a href="#" class="friend-btn">
+                     Click Here ♡
+                  </a>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- POPUPS -->
+
+    <!-- FRIEND 1 -->
+
+    <div id="friend1-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend1()">&times;</span>
+
+            <img src="images/safeenabilah.jpeg" alt="Friend 1">
+
+            <h2>Safee</h2>
+
+            <p>
+                Safee is one of my childhood friends
+                who always supports me through every situation.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 2 -->
+
+    <div id="friend2-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend2()">&times;</span>
+
+            <img src="images/dhiaainul.jpeg" alt="Friend 2">
+
+            <h2>Dhia</h2>
+
+            <p>
+                Dhia always brings happiness and laughter
+                into our friendship memories.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 3 -->
+
+    <div id="friend3-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend3()">&times;</span>
+
+            <img src="images/ainanafisa.jpeg" alt="Friend 3">
+
+            <h2>Aina</h2>
+
+            <p>
+                Aina is caring and understanding,
+                making every memory unforgettable.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 4 -->
+
+    <div id="friend4-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend4()">&times;</span>
+
+            <img src="images/aunifarhanah.jpeg" alt="Friend 4">
+
+            <h2>Auni</h2>
+
+            <p>
+                Auni is always there whenever I need support and encouragement.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 5 -->
+
+    <div id="friend5-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend5()">&times;</span>
+
+            <img src="images/alyairdina.jpeg" alt="Friend 5">
+
+            <h2>Alya</h2>
+
+            <p>
+                Alya is one of my first friends who always help me in every situation. 			She also very funny which makes my stress go away.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 6 -->
+
+    <div id="friend6-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend6()">&times;</span>
+
+            <img src="images/ameeranajwa.jpeg" alt="Friend 6">
+
+            <h2>Ameera</h2>
+
+            <p>
+                Ameera always helps me to forget my problems.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 7 -->
+
+    <div id="friend7-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend7()">&times;</span>
+
+            <img src="images/sabihatunnajwa.jpeg" alt="Friend 7">
+
+            <h2>Najwa</h2>
+
+            <p>
+                Najwa always give happiness to our friendship.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- FRIEND 8 -->
+
+    <div id="friend8-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFriend8()">&times;</span>
+
+            <img src="images/nurinnisa.jpeg" alt="Friend 8">
+
+            <h2>Nurin</h2>
+
+            <p>
+                Nurin is a caring friend who always motivates me during diploma life.
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- QUOTE SECTION -->
+
+    <section class="quote-section">
+
+        <h2>
+            "Good friends are like stars, you don't always see them,
+            but you know they are always there."
+        </h2>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Nabilah's Personal Space |
+            Recommended Browser: Microsoft Edge |
+            Last Updated: May 2026
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openFriend1() {
+            document.getElementById("friend1-popup").style.display = "flex";
+        }
+
+        function closeFriend1() {
+            document.getElementById("friend1-popup").style.display = "none";
+        }
+
+
+
+        function openFriend2() {
+            document.getElementById("friend2-popup").style.display = "flex";
+        }
+
+        function closeFriend2() {
+            document.getElementById("friend2-popup").style.display = "none";
+        }
+
+
+
+        function openFriend3() {
+            document.getElementById("friend3-popup").style.display = "flex";
+        }
+
+        function closeFriend3() {
+            document.getElementById("friend3-popup").style.display = "none";
+        }
+
+
+
+        function openFriend4() {
+            document.getElementById("friend4-popup").style.display = "flex";
+        }
+
+        function closeFriend4() {
+            document.getElementById("friend4-popup").style.display = "none";
+        }
+
+
+
+        function openFriend5() {
+            document.getElementById("friend5-popup").style.display = "flex";
+        }
+
+        function closeFriend5() {
+            document.getElementById("friend5-popup").style.display = "none";
+        }
+
+
+
+        function openFriend6() {
+            document.getElementById("friend6-popup").style.display = "flex";
+        }
+
+        function closeFriend6() {
+            document.getElementById("friend6-popup").style.display = "none";
+        }
+
+
+
+        function openFriend7() {
+            document.getElementById("friend7-popup").style.display = "flex";
+        }
+
+        function closeFriend7() {
+            document.getElementById("friend7-popup").style.display = "none";
+        }
+
+
+
+        function openFriend8() {
+            document.getElementById("friend8-popup").style.display = "flex";
+        }
+
+        function closeFriend8() {
+            document.getElementById("friend8-popup").style.display = "none";
+        }
+
+    </script>
+
+
+</body>
+
+</html>

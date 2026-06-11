@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>Family | Nabilah's Personal Space</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+ 	<!-- BACKGROUND MUSIC -->
+
+  	 <audio autoplay loop style="display:none;">
+
+          <source src="music/backgroundmusic.mp3" type="audio/mp3">
+	
+          </audio>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <img src="images/banner.png" alt="Banner" class="banner">
+
+    </header>
+
+
+
+     
+<!-- NAVIGATION -->
+
+<nav>
+
+    <!-- LOGO -->
+
+    <a href="index.html">
+
+        <img src="images/logo.png"
+        alt="Logo"
+        class="logo">
+
+    </a>
+
+
+
+    <!-- NAVIGATION MENU -->
+
+    <a href="index.html">HOME</a>
+    <a href="aboutme.html">ABOUT ME</a>
+    <a href="education.html">EDUCATION</a>
+    <a href="family.html">FAMILY</a>
+    <a href="friends.html">FRIENDS</a>
+    <a href="moments.html">MOMENTS</a>
+    <a href="hobby.html">HOBBY</a>
+
+</nav>
+
+
+
+
+
+    <!-- FAMILY INTRO SECTION -->
+
+    <section class="family-section">
+
+        <h1>My Lovely Family</h1>
+
+        <hr class="line">
+
+        <img src="images/family.jpeg" alt="Family Photo" class="family-photo">
+
+        <p class="family-text">
+
+            Family is one of the greatest blessings in my life.
+            They are my biggest supporters and always stay beside me
+            through every happy and difficult moment.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- FAMILY BUTTONS -->
+
+    <section class="family-buttons">
+
+        <button onclick="openFather()">Ayah</button>
+
+        <button onclick="openMother()">Ibu</button>
+
+	<button onclick="openSister1()">Angah</button>
+
+        <button onclick="openBrother()">Abang</button>
+
+        <button onclick="openSister2()">Achik</button>
+
+        <button onclick="openSister3()">Adik</button>
+
+    </section>
+
+
+
+    <!-- FATHER POPUP -->
+
+    <div id="father-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeFather()">&times;</span>
+
+            <img src="images/ayah.jpeg" alt="Father">
+
+            <h2>Ayah</h2>
+
+            <ul class="family-info">
+
+                <li><strong>Name:</b>Wan Rozaini bin Wan Ibrahim </li>
+		<li><strong>Occupation:</b> Librarian </li> 
+ 		<li><strong>Hobby:</b> Watching movies </li>
+ 		<li><strong>Favorite Drink:</b> Coffee ☕ </li>
+	   </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- MOTHER POPUP -->
+
+    <div id="mother-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeMother()">&times;</span>
+
+            <img src="images/ibu.jpeg" alt="Mother">
+
+            <h2>Ibu</h2>
+
+            <ul class="family-info">
+
+               <li><strong>Name:</b> Rosimah Binti Soad</li>
+	       <li><strong>Occupation:</b> Librarian </li>
+	       <li><strong>Hobby:</b> Cooking 🍳 </li>
+	       <li><strong>Favorite Drink:</b> Coffee ☕ </li>
+	    </ul>
+
+        </div>
+
+    </div>
+
+ <!-- SISTER 1 POPUP -->
+
+    <div id="sister1-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeSister1()">&times;</span>
+
+            <img src="images/dina.jpeg" alt="Sister 1">
+
+            <h2>The Second Child</h2>
+
+            <ul class="family-info">
+                 <li><strong>Name:</b> Wan Nur Irdina Qaisara Binti Wan Rozaini</li>
+		 <li><strong>Age:</b> 18 Years Old </li>
+		 <li><strong>Hobby:</b> Watching movies </li>
+		 <li><strong>Favorite Color:</b> Green </li>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <!-- BROTHER POPUP -->
+
+    <div id="brother-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeBrother()">&times;</span>
+
+            <img src="images/thaqif.jpeg" alt="Brother">
+
+            <h2>The Third Child</h2>
+
+            <ul class="family-info">
+                 <li><strong>Name:</b> Wan Muhamad Thaqif Danial Bin Wan Rozaini</li>
+		 <li><strong>Age:</b> 15 Years Old </li>
+		 <li><strong>Hobby:</b> Playing music instrument </li>
+		 <li><strong>Favorite Color:</b> Black </li> 
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SISTER 2 POPUP -->
+
+    <div id="sister2-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeSister2()">&times;</span>
+
+            <img src="images/faqihah.jpeg" alt="Sister 2">
+
+            <h2>The Fourth Child </h2>
+
+             <ul class="family-info">
+                 <li><strong>Name:</b> Wan Nur Faqihah Imani binti Wan Rozaini</li>
+		 <li><strong>Age:</b> 9 Years Old </li>
+		 <li><strong>Hobby:</b> Playing video games </li>
+		 <li><strong>Favorite Color:</b> Pink </li> 
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- SISTER 3 POPUP -->
+
+    <div id="sister3-popup" class="popup">
+
+        <div class="popup-content">
+
+            <span class="close" onclick="closeSister3()">&times;</span>
+
+            <img src="images/mikayla.jpeg" alt="Sister 3">
+
+            <h2>The Youngest Child</h2>
+
+           <ul class="family-info">
+
+    	<li><strong>Name:</strong> Wan Nur Inara Mikayla binti Wan Rozaini</li>
+
+    	<li><strong>Age:</strong> 5 Years Old</li>
+
+    	<li><strong>Hobby:</strong> Drawing</li>
+
+    	<li><strong>Favorite Color:</strong> Purple</li>
+
+	</ul>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- QUOTE SECTION -->
+
+    <section class="quote-section">
+
+        <h2>
+            "Family is where life begins and love never ends."
+        </h2>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Nabilah's Personal Space |
+            Recommended Browser: Microsoft Edge |
+            Last Updated: May 2026
+        </p>
+
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openFather() {
+            document.getElementById("father-popup").style.display = "flex";
+        }
+
+        function closeFather() {
+            document.getElementById("father-popup").style.display = "none";
+        }
+
+
+
+        function openMother() {
+            document.getElementById("mother-popup").style.display = "flex";
+        }
+
+        function closeMother() {
+            document.getElementById("mother-popup").style.display = "none";
+        }
+
+
+
+        function openBrother() {
+            document.getElementById("brother-popup").style.display = "flex";
+        }
+
+        function closeBrother() {
+            document.getElementById("brother-popup").style.display = "none";
+        }
+
+
+
+        function openSister1() {
+            document.getElementById("sister1-popup").style.display = "flex";
+        }
+
+        function closeSister1() {
+            document.getElementById("sister1-popup").style.display = "none";
+        }
+
+
+
+        function openSister2() {
+            document.getElementById("sister2-popup").style.display = "flex";
+        }
+
+        function closeSister2() {
+            document.getElementById("sister2-popup").style.display = "none";
+        }
+
+
+
+        function openSister3() {
+            document.getElementById("sister3-popup").style.display = "flex";
+        }
+
+        function closeSister3() {
+            document.getElementById("sister3-popup").style.display = "none";
+        }
+
+
+
+    </script>
+
+
+</body>
+
+</html>
